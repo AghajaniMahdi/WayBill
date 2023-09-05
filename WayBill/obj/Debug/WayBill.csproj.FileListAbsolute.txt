@@ -1,0 +1,13 @@
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.csproj.AssemblyReference.cache
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.csproj.SuggestedBindingRedirects.cache
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.Properties.Resources.resources
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.UserInterface.FormMainWindow.resources
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.csproj.GenerateResource.cache
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.csproj.CoreCompileInputs.cache
+E:\Projects\practical\WayBill\WayBill\bin\Debug\WayBill.exe.config
+E:\Projects\practical\WayBill\WayBill\bin\Debug\WayBill.exe
+E:\Projects\practical\WayBill\WayBill\bin\Debug\WayBill.pdb
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.exe
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.pdb
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.UserInterface.Insurance.resources
+E:\Projects\practical\WayBill\WayBill\obj\Debug\WayBill.UserInterface.InsuranceAddEdit.resources
