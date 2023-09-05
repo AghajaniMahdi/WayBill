@@ -32,5 +32,11 @@ namespace WayBill.UserInterface
             Insurance form = new Insurance();
             form.ShowDialog();
         }
+
+        private void فرستندهToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sender form = new Sender();
+            form.ShowDialog();
+        }
     }
 }

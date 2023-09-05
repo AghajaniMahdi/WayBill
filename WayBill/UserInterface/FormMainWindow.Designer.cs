@@ -168,6 +168,7 @@
             this.فرستندهToolStripMenuItem.Name = "فرستندهToolStripMenuItem";
             this.فرستندهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.فرستندهToolStripMenuItem.Text = "فرستنده";
+            this.فرستندهToolStripMenuItem.Click += new System.EventHandler(this.فرستندهToolStripMenuItem_Click);
             // 
             // گیرندهToolStripMenuItem
             // 
