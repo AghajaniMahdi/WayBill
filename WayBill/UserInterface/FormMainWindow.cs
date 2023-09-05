@@ -38,5 +38,11 @@ namespace WayBill.UserInterface
             Sender form = new Sender();
             form.ShowDialog();
         }
+
+        private void گیرندهToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Receiver form = new Receiver();
+            form.ShowDialog();
+        }
     }
 }

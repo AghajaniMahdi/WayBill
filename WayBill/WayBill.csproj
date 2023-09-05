@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DataAccess\SqlServerWorker.cs" />
     <Compile Include="LogicLayer\LLInsurances.cs" />
+    <Compile Include="LogicLayer\LLReceiver.cs" />
     <Compile Include="LogicLayer\LLSenders.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +75,18 @@
     <Compile Include="UserInterface\InsuranceAddEdit.Designer.cs">
       <DependentUpon>InsuranceAddEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\Receiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Receiver.Designer.cs">
+      <DependentUpon>Receiver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ReceiverAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\ReceiverAddEdit.Designer.cs">
+      <DependentUpon>ReceiverAddEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\Sender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +112,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\InsuranceAddEdit.resx">
       <DependentUpon>InsuranceAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\Receiver.resx">
+      <DependentUpon>Receiver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\ReceiverAddEdit.resx">
+      <DependentUpon>ReceiverAddEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Sender.resx">
       <DependentUpon>Sender.cs</DependentUpon>

@@ -212,6 +212,7 @@
             this.Sender_NationalCode.MinimumWidth = 6;
             this.Sender_NationalCode.Name = "Sender_NationalCode";
             this.Sender_NationalCode.ReadOnly = true;
+            this.Sender_NationalCode.Width = 125;
             // 
             // Sender_CellPhone
             // 
@@ -220,6 +221,7 @@
             this.Sender_CellPhone.MinimumWidth = 6;
             this.Sender_CellPhone.Name = "Sender_CellPhone";
             this.Sender_CellPhone.ReadOnly = true;
+            this.Sender_CellPhone.Width = 125;
             // 
             // Sender_Address
             // 
@@ -237,6 +239,7 @@
             this.Sender_PostalCode.MinimumWidth = 6;
             this.Sender_PostalCode.Name = "Sender_PostalCode";
             this.Sender_PostalCode.ReadOnly = true;
+            this.Sender_PostalCode.Width = 125;
             // 
             // Sender
             // 

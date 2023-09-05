@@ -177,6 +177,7 @@
             this.گیرندهToolStripMenuItem.Name = "گیرندهToolStripMenuItem";
             this.گیرندهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.گیرندهToolStripMenuItem.Text = "گیرنده";
+            this.گیرندهToolStripMenuItem.Click += new System.EventHandler(this.گیرندهToolStripMenuItem_Click);
             // 
             // رانندهToolStripMenuItem
             // 
