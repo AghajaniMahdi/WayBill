@@ -44,5 +44,11 @@ namespace WayBill.UserInterface
             Receiver form = new Receiver();
             form.ShowDialog();
         }
+
+        private void رانندهToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Driver form = new Driver(); 
+            form.ShowDialog();
+        }
     }
 }

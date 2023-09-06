@@ -186,6 +186,7 @@
             this.رانندهToolStripMenuItem.Name = "رانندهToolStripMenuItem";
             this.رانندهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.رانندهToolStripMenuItem.Text = "راننده";
+            this.رانندهToolStripMenuItem.Click += new System.EventHandler(this.رانندهToolStripMenuItem_Click);
             // 
             // وسایلنقلیهToolStripMenuItem
             // 

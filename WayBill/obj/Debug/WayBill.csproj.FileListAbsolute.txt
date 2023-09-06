@@ -28,3 +28,5 @@ C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.
 C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.SenderAddEdit.resources
 C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.Receiver.resources
 C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.ReceiverAddEdit.resources
+C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.Driver.resources
+C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.DriverAddEdit.resources

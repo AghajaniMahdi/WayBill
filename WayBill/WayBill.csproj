@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\SqlServerWorker.cs" />
+    <Compile Include="LogicLayer\LLDrivers.cs" />
     <Compile Include="LogicLayer\LLInsurances.cs" />
     <Compile Include="LogicLayer\LLReceiver.cs" />
     <Compile Include="LogicLayer\LLSenders.cs" />
@@ -56,6 +57,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Driver.Designer.cs">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\DriverAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DriverAddEdit.Designer.cs">
+      <DependentUpon>DriverAddEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\FormMainWindow.cs">
       <SubType>Form</SubType>
@@ -103,6 +116,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\Driver.resx">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\DriverAddEdit.resx">
+      <DependentUpon>DriverAddEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\FormMainWindow.resx">
       <DependentUpon>FormMainWindow.cs</DependentUpon>
@@ -168,6 +187,12 @@
     <None Include="Resources\report2.png" />
     <None Include="Resources\report.png" />
     <None Include="Resources\phone.png" />
+    <None Include="Resources\Pelak.jpg" />
+    <None Include="Resources\Pelak1.jpg" />
+    <None Include="Resources\Pelak2.jpg" />
+    <None Include="Resources\Pelak3.jpg" />
+    <None Include="Resources\Pelak4.jpg" />
+    <None Include="Resources\Pelak5.jpg" />
     <Content Include="Resources\report4.ico" />
     <Content Include="Resources\truck.ico" />
   </ItemGroup>
