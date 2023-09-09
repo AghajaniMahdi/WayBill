@@ -48,10 +48,10 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -167,7 +167,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox1.Size = new System.Drawing.Size(182, 26);
-            this.textBox1.TabIndex = 32;
+            this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
@@ -175,7 +175,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox2.Size = new System.Drawing.Size(182, 26);
-            this.textBox2.TabIndex = 35;
+            this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
@@ -183,7 +183,7 @@
             this.textBox3.MaxLength = 11;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(182, 26);
-            this.textBox3.TabIndex = 36;
+            this.textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
@@ -191,7 +191,7 @@
             this.textBox4.MaxLength = 10;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(182, 26);
-            this.textBox4.TabIndex = 37;
+            this.textBox4.TabIndex = 3;
             // 
             // textBox5
             // 
@@ -199,14 +199,14 @@
             this.textBox5.MaxLength = 10;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(182, 26);
-            this.textBox5.TabIndex = 38;
+            this.textBox5.TabIndex = 4;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(12, 321);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(182, 26);
-            this.textBox6.TabIndex = 39;
+            this.textBox6.TabIndex = 5;
             // 
             // imageList1
             // 
@@ -222,19 +222,9 @@
             this.richTextBox1.MaxLength = 2;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(43, 53);
-            this.richTextBox1.TabIndex = 41;
+            this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WayBill.Properties.Resources.Pelak2;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 365);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
             // 
             // richTextBox2
             // 
@@ -243,7 +233,7 @@
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 8);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(67, 53);
-            this.richTextBox2.TabIndex = 43;
+            this.richTextBox2.TabIndex = 8;
             this.richTextBox2.Text = "";
             // 
             // richTextBox3
@@ -253,7 +243,7 @@
             this.richTextBox3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 8);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(53, 40);
-            this.richTextBox3.TabIndex = 44;
+            this.richTextBox3.TabIndex = 9;
             this.richTextBox3.Text = "";
             // 
             // comboBox1
@@ -284,7 +274,17 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBox1.Size = new System.Drawing.Size(55, 50);
-            this.comboBox1.TabIndex = 45;
+            this.comboBox1.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WayBill.Properties.Resources.Pelak2;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 365);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(252, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
             // 
             // DriverAddEdit
             // 

@@ -48,7 +48,7 @@
             this.وسایلنقلیهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuInsurance = new System.Windows.Forms.ToolStripMenuItem();
             this.گزارشاتToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.جستجویپیشرفتهToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.دربارهماToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.خروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
@@ -127,7 +127,7 @@
             this.وسایلنقلیهToolStripMenuItem,
             this.ToolStripMenuInsurance,
             this.گزارشاتToolStripMenuItem1,
-            this.جستجویپیشرفتهToolStripMenuItem1,
+            this.دربارهماToolStripMenuItem1,
             this.خروجToolStripMenuItem,
             this.toolStripMenuItem7,
             this.toolStripMenuItem8,
@@ -137,7 +137,7 @@
             this.toolStripMenuItem12});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(669, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(667, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -166,7 +166,7 @@
             this.فرستندهToolStripMenuItem.BackColor = System.Drawing.Color.Goldenrod;
             this.فرستندهToolStripMenuItem.Image = global::WayBill.Properties.Resources.BigSend2;
             this.فرستندهToolStripMenuItem.Name = "فرستندهToolStripMenuItem";
-            this.فرستندهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.فرستندهToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.فرستندهToolStripMenuItem.Text = "فرستنده";
             this.فرستندهToolStripMenuItem.Click += new System.EventHandler(this.فرستندهToolStripMenuItem_Click);
             // 
@@ -175,7 +175,7 @@
             this.گیرندهToolStripMenuItem.BackColor = System.Drawing.Color.Goldenrod;
             this.گیرندهToolStripMenuItem.Image = global::WayBill.Properties.Resources.BigReceive2;
             this.گیرندهToolStripMenuItem.Name = "گیرندهToolStripMenuItem";
-            this.گیرندهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.گیرندهToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.گیرندهToolStripMenuItem.Text = "گیرنده";
             this.گیرندهToolStripMenuItem.Click += new System.EventHandler(this.گیرندهToolStripMenuItem_Click);
             // 
@@ -184,7 +184,7 @@
             this.رانندهToolStripMenuItem.BackColor = System.Drawing.Color.Goldenrod;
             this.رانندهToolStripMenuItem.Image = global::WayBill.Properties.Resources.Wheel;
             this.رانندهToolStripMenuItem.Name = "رانندهToolStripMenuItem";
-            this.رانندهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.رانندهToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.رانندهToolStripMenuItem.Text = "راننده";
             this.رانندهToolStripMenuItem.Click += new System.EventHandler(this.رانندهToolStripMenuItem_Click);
             // 
@@ -211,14 +211,16 @@
             this.گزارشاتToolStripMenuItem1.Name = "گزارشاتToolStripMenuItem1";
             this.گزارشاتToolStripMenuItem1.Size = new System.Drawing.Size(120, 25);
             this.گزارشاتToolStripMenuItem1.Text = "گزارشات   ";
+            this.گزارشاتToolStripMenuItem1.Click += new System.EventHandler(this.گزارشاتToolStripMenuItem1_Click);
             // 
-            // جستجویپیشرفتهToolStripMenuItem1
+            // دربارهماToolStripMenuItem1
             // 
-            this.جستجویپیشرفتهToolStripMenuItem1.BackColor = System.Drawing.Color.Goldenrod;
-            this.جستجویپیشرفتهToolStripMenuItem1.Image = global::WayBill.Properties.Resources.search_icon;
-            this.جستجویپیشرفتهToolStripMenuItem1.Name = "جستجویپیشرفتهToolStripMenuItem1";
-            this.جستجویپیشرفتهToolStripMenuItem1.Size = new System.Drawing.Size(193, 25);
-            this.جستجویپیشرفتهToolStripMenuItem1.Text = "جستجوی پیشرفته   ";
+            this.دربارهماToolStripMenuItem1.BackColor = System.Drawing.Color.Goldenrod;
+            this.دربارهماToolStripMenuItem1.Image = global::WayBill.Properties.Resources.search_icon;
+            this.دربارهماToolStripMenuItem1.Name = "دربارهماToolStripMenuItem1";
+            this.دربارهماToolStripMenuItem1.Size = new System.Drawing.Size(101, 25);
+            this.دربارهماToolStripMenuItem1.Text = "درباره ما";
+            this.دربارهماToolStripMenuItem1.Click += new System.EventHandler(this.دربارهماToolStripMenuItem1_Click);
             // 
             // خروجToolStripMenuItem
             // 
@@ -263,8 +265,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 376);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::WayBill.Properties.Resources.logo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(667, 376);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -302,7 +308,7 @@
         private System.Windows.Forms.ToolStripMenuItem وسایلنقلیهToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuInsurance;
         private System.Windows.Forms.ToolStripMenuItem گزارشاتToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem جستجویپیشرفتهToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem دربارهماToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem خروجToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;

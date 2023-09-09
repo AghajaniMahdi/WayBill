@@ -58,6 +58,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\Driver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     <Compile Include="UserInterface\InsuranceAddEdit.Designer.cs">
       <DependentUpon>InsuranceAddEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\PlateDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\PlateDisplay.Designer.cs">
+      <DependentUpon>PlateDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\Receiver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </Compile>
     <Compile Include="UserInterface\ReceiverAddEdit.Designer.cs">
       <DependentUpon>ReceiverAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\Sender.cs">
       <SubType>Form</SubType>
@@ -117,6 +135,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Driver.resx">
       <DependentUpon>Driver.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,11 +153,17 @@
     <EmbeddedResource Include="UserInterface\InsuranceAddEdit.resx">
       <DependentUpon>InsuranceAddEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\PlateDisplay.resx">
+      <DependentUpon>PlateDisplay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Receiver.resx">
       <DependentUpon>Receiver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ReceiverAddEdit.resx">
       <DependentUpon>ReceiverAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Sender.resx">
       <DependentUpon>Sender.cs</DependentUpon>
@@ -178,6 +205,8 @@
     <None Include="Resources\BigTruck.png" />
     <None Include="Resources\Exit.png" />
     <None Include="Resources\BIGREPORT.png" />
+    <None Include="Resources\2606143_5623.jpg" />
+    <None Include="Resources\18246125_v982-d3-04.jpg" />
     <Content Include="Resources\billway.ico" />
     <Content Include="Resources\bus.ico" />
     <Content Include="Resources\bus2.ico" />
@@ -193,7 +222,10 @@
     <None Include="Resources\Pelak3.jpg" />
     <None Include="Resources\Pelak4.jpg" />
     <None Include="Resources\Pelak5.jpg" />
+    <None Include="Resources\online-internet-symbol-icon.jpg" />
+    <None Include="Resources\logo.png" />
     <Content Include="Resources\report4.ico" />
+    <None Include="Resources\telegram.png" />
     <Content Include="Resources\truck.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

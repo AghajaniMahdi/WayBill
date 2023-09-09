@@ -50,5 +50,17 @@ namespace WayBill.UserInterface
             Driver form = new Driver(); 
             form.ShowDialog();
         }
+
+        private void گزارشاتToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Report form = new Report();
+            form.ShowDialog();
+        }
+
+        private void دربارهماToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AboutUs form = new AboutUs();
+            form.ShowDialog();
+        }
     }
 }

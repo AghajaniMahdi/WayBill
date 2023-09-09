@@ -130,5 +130,19 @@ namespace WayBill.UserInterface
                 }
             }
         }
+
+        private void dataGridViewData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            PlateDisplay form = new PlateDisplay();
+
+            DataRow row = ((DataRowView)dataGridViewData.CurrentRow.DataBoundItem).Row;
+
+            form.richTextBox1.Text = row["Driver_Plate1"].ToString();
+            form.comboBox1.Text = row["Driver_Plate2"].ToString();
+            form.richTextBox2.Text = row["Driver_Plate3"].ToString();
+            form.richTextBox3.Text = row["Driver_Plate4"].ToString();
+
+            form.ShowDialog();
+        }
     }
 }
