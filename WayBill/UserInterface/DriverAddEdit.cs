@@ -12,6 +12,8 @@ namespace WayBill.UserInterface
 {
     public partial class DriverAddEdit : Form
     {
+        public int intsenders = 0;
+
         public DriverAddEdit()
         {
             InitializeComponent();
@@ -66,6 +68,8 @@ namespace WayBill.UserInterface
             }
 
             DialogResult = DialogResult.OK;
+            //intsenders ++;
+            //MessageBox.Show(intsenders.ToString());
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)

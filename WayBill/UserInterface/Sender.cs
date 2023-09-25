@@ -9,21 +9,31 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WayBill.DataAccess;
 using WayBill.LogicLayer;
+
 namespace WayBill.UserInterface
 {
     public partial class Sender : Form
     {
         LLSenders llsenders = new LLSenders();
+        internal int intsenders;
+        Report report = new Report();
 
         public Sender()
         {
             InitializeComponent();
             LoadData();
         }
-
         private void LoadData()
         {
             bindingSourceData.DataSource = llsenders.Select();
+            Quantity();
+        }
+
+        private void Quantity()
+        {
+            intsenders = dataGridViewDataSender.Rows.Count;
+            label69.Text = intsenders.ToString();
+            //report.labelsenders.Text = label69.Text;
         }
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
@@ -56,7 +66,7 @@ namespace WayBill.UserInterface
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            if (dataGridViewData.CurrentRow == null)
+            if (dataGridViewDataSender.CurrentRow == null)
             {
                 MessageBox.Show("لطفا یک سطر را انتخاب کنید", "پیغام سیستم", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -66,7 +76,7 @@ namespace WayBill.UserInterface
 
             if (dlgresult == DialogResult.Yes)
             {
-                DataRow row = ((DataRowView)dataGridViewData.CurrentRow.DataBoundItem).Row;
+                DataRow row = ((DataRowView)dataGridViewDataSender.CurrentRow.DataBoundItem).Row;
                 int senderid = Convert.ToInt32(row["Sender_ID"]);
 
                 if (llsenders.Delete(senderid))
@@ -94,14 +104,14 @@ namespace WayBill.UserInterface
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-            if (dataGridViewData.CurrentRow == null)
+            if (dataGridViewDataSender.CurrentRow == null)
             {
                 MessageBox.Show("لطفا یک سطر را انتخاب کنید", "پیغام سیستم", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             SenderAddEdit form = new SenderAddEdit();
-            DataRow row = ((DataRowView)dataGridViewData.CurrentRow.DataBoundItem).Row;
+            DataRow row = ((DataRowView)dataGridViewDataSender.CurrentRow.DataBoundItem).Row;
 
             form.textBox1.Text = row["Sender_FirstName"].ToString();
             form.textBox2.Text = row["Sender_LastName"].ToString();
@@ -120,6 +130,11 @@ namespace WayBill.UserInterface
                     MessageBox.Show("سطر مورد نظر با موفقیت ویرایش شد", "پیغام سیستم");
                 }
             }
+        }
+
+        private void Sender_Load(object sender, EventArgs e)
+        {
+            Quantity();
         }
     }
 }

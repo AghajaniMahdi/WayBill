@@ -38,7 +38,7 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.dataGridViewData = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDataSender = new System.Windows.Forms.DataGridView();
             this.Sender_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sender_FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sender_LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,9 +47,10 @@
             this.Sender_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sender_PostalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceData = new System.Windows.Forms.BindingSource(this.components);
+            this.label69 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDataSender)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,14 +151,14 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // dataGridViewData
+            // dataGridViewDataSender
             // 
-            this.dataGridViewData.AllowUserToAddRows = false;
-            this.dataGridViewData.AllowUserToDeleteRows = false;
-            this.dataGridViewData.AutoGenerateColumns = false;
-            this.dataGridViewData.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewDataSender.AllowUserToAddRows = false;
+            this.dataGridViewDataSender.AllowUserToDeleteRows = false;
+            this.dataGridViewDataSender.AutoGenerateColumns = false;
+            this.dataGridViewDataSender.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewDataSender.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDataSender.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Sender_ID,
             this.Sender_FirstName,
             this.Sender_LastName,
@@ -165,18 +166,18 @@
             this.Sender_CellPhone,
             this.Sender_Address,
             this.Sender_PostalCode});
-            this.dataGridViewData.DataSource = this.bindingSourceData;
-            this.dataGridViewData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewData.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewData.Location = new System.Drawing.Point(0, 50);
-            this.dataGridViewData.Name = "dataGridViewData";
-            this.dataGridViewData.ReadOnly = true;
-            this.dataGridViewData.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridViewData.RowHeadersWidth = 51;
-            this.dataGridViewData.RowTemplate.Height = 24;
-            this.dataGridViewData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewData.Size = new System.Drawing.Size(1162, 443);
-            this.dataGridViewData.TabIndex = 3;
+            this.dataGridViewDataSender.DataSource = this.bindingSourceData;
+            this.dataGridViewDataSender.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDataSender.GridColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewDataSender.Location = new System.Drawing.Point(0, 50);
+            this.dataGridViewDataSender.Name = "dataGridViewDataSender";
+            this.dataGridViewDataSender.ReadOnly = true;
+            this.dataGridViewDataSender.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridViewDataSender.RowHeadersWidth = 51;
+            this.dataGridViewDataSender.RowTemplate.Height = 24;
+            this.dataGridViewDataSender.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewDataSender.Size = new System.Drawing.Size(1162, 443);
+            this.dataGridViewDataSender.TabIndex = 3;
             // 
             // Sender_ID
             // 
@@ -241,12 +242,22 @@
             this.Sender_PostalCode.ReadOnly = true;
             this.Sender_PostalCode.Width = 125;
             // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(12, 451);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(44, 16);
+            this.label69.TabIndex = 4;
+            this.label69.Text = "label1";
+            // 
             // Sender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1162, 543);
-            this.Controls.Add(this.dataGridViewData);
+            this.Controls.Add(this.label69);
+            this.Controls.Add(this.dataGridViewDataSender);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -255,12 +266,14 @@
             this.Name = "Sender";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "فرستنده";
+            this.Load += new System.EventHandler(this.Sender_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDataSender)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceData)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -274,7 +287,6 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.DataGridView dataGridViewData;
         private System.Windows.Forms.BindingSource bindingSourceData;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sender_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sender_FirstName;
@@ -283,5 +295,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Sender_CellPhone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sender_Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sender_PostalCode;
+        private System.Windows.Forms.Label label69;
+        public System.Windows.Forms.DataGridView dataGridViewDataSender;
     }
 }

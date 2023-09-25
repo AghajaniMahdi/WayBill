@@ -14,6 +14,11 @@ namespace WayBill.LogicLayer
             return SqlServerWorker.Select("Select * from Senders;");
         }
 
+        internal DataTable ConditionalSelect(int senderid)
+        {
+            return SqlServerWorker.Select($"Select * from Senders where Sender_ID = {senderid};");
+        }
+
         //Insert
         internal bool Add(string firstname, string lastname, string nationalcode, string cellphone, string address, string postalcode)
         {

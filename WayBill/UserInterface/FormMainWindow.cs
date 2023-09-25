@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace WayBill.UserInterface
 {
@@ -47,19 +48,44 @@ namespace WayBill.UserInterface
 
         private void رانندهToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Driver form = new Driver(); 
+            Driver form = new Driver();
             form.ShowDialog();
         }
 
         private void گزارشاتToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Report form = new Report();
+            Sender senderr = new Sender();
+
+            {
+                PersianCalendar persian = new PersianCalendar();
+                DateTime datetime = DateTime.Now;
+                StringBuilder str = new StringBuilder();
+
+                str.Append(persian.GetYear(datetime).ToString("0000"));
+                str.Append("/");
+                str.Append(persian.GetMonth(datetime).ToString("00"));
+                str.Append("/");
+                str.Append(persian.GetDayOfMonth(datetime).ToString("00"));
+                form.label20.Text = str.ToString();
+            }
+
+            {
+                form.labelsenders.Text = senderr.intsenders.ToString();
+
+            }
             form.ShowDialog();
         }
 
         private void دربارهماToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             AboutUs form = new AboutUs();
+            form.ShowDialog();
+        }
+
+        private void بارنامهToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bill form = new Bill();
             form.ShowDialog();
         }
     }

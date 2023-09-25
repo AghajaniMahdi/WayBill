@@ -33,3 +33,5 @@ C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.
 C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.PlateDisplay.resources
 C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.AboutUs.resources
 C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.Report.resources
+C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.Bill.resources
+C:\Users\MAHDI\Documents\GitHub\WayBill\WayBill\obj\Debug\WayBill.UserInterface.SenderReceiverDisplay.resources

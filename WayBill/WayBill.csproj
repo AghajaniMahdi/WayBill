@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\SqlServerWorker.cs" />
+    <Compile Include="LogicLayer\LLBills.cs" />
     <Compile Include="LogicLayer\LLDrivers.cs" />
     <Compile Include="LogicLayer\LLInsurances.cs" />
     <Compile Include="LogicLayer\LLReceiver.cs" />
@@ -63,6 +64,12 @@
     </Compile>
     <Compile Include="UserInterface\AboutUs.Designer.cs">
       <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\Driver.cs">
       <SubType>Form</SubType>
@@ -130,6 +137,12 @@
     <Compile Include="UserInterface\SenderAddEdit.Designer.cs">
       <DependentUpon>SenderAddEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\SenderReceiverDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\SenderReceiverDisplay.Designer.cs">
+      <DependentUpon>SenderReceiverDisplay.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -137,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\AboutUs.resx">
       <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\Driver.resx">
       <DependentUpon>Driver.cs</DependentUpon>
@@ -170,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\SenderAddEdit.resx">
       <DependentUpon>SenderAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\SenderReceiverDisplay.resx">
+      <DependentUpon>SenderReceiverDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -137,7 +137,7 @@
             this.toolStripMenuItem12});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(667, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(667, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -146,8 +146,9 @@
             this.بارنامهToolStripMenuItem.BackColor = System.Drawing.Color.Goldenrod;
             this.بارنامهToolStripMenuItem.Image = global::WayBill.Properties.Resources.letter;
             this.بارنامهToolStripMenuItem.Name = "بارنامهToolStripMenuItem";
-            this.بارنامهToolStripMenuItem.Size = new System.Drawing.Size(99, 25);
+            this.بارنامهToolStripMenuItem.Size = new System.Drawing.Size(99, 26);
             this.بارنامهToolStripMenuItem.Text = "بارنامه  ";
+            this.بارنامهToolStripMenuItem.Click += new System.EventHandler(this.بارنامهToolStripMenuItem_Click);
             // 
             // افرادToolStripMenuItem1
             // 
@@ -158,7 +159,7 @@
             this.رانندهToolStripMenuItem});
             this.افرادToolStripMenuItem1.Image = global::WayBill.Properties.Resources.group_theapplication_users_2907;
             this.افرادToolStripMenuItem1.Name = "افرادToolStripMenuItem1";
-            this.افرادToolStripMenuItem1.Size = new System.Drawing.Size(89, 25);
+            this.افرادToolStripMenuItem1.Size = new System.Drawing.Size(89, 26);
             this.افرادToolStripMenuItem1.Text = "افراد   ";
             // 
             // فرستندهToolStripMenuItem
@@ -193,14 +194,14 @@
             this.وسایلنقلیهToolStripMenuItem.BackColor = System.Drawing.Color.Goldenrod;
             this.وسایلنقلیهToolStripMenuItem.Image = global::WayBill.Properties.Resources.BigTruck;
             this.وسایلنقلیهToolStripMenuItem.Name = "وسایلنقلیهToolStripMenuItem";
-            this.وسایلنقلیهToolStripMenuItem.Size = new System.Drawing.Size(141, 25);
+            this.وسایلنقلیهToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
             this.وسایلنقلیهToolStripMenuItem.Text = "وسایل نقلیه  ";
             // 
             // ToolStripMenuInsurance
             // 
             this.ToolStripMenuInsurance.BackColor = System.Drawing.Color.Goldenrod;
             this.ToolStripMenuInsurance.Name = "ToolStripMenuInsurance";
-            this.ToolStripMenuInsurance.Size = new System.Drawing.Size(55, 25);
+            this.ToolStripMenuInsurance.Size = new System.Drawing.Size(55, 26);
             this.ToolStripMenuInsurance.Text = "بیمه";
             this.ToolStripMenuInsurance.Click += new System.EventHandler(this.ToolStripMenuInsurance_Click);
             // 
@@ -209,7 +210,7 @@
             this.گزارشاتToolStripMenuItem1.BackColor = System.Drawing.Color.Goldenrod;
             this.گزارشاتToolStripMenuItem1.Image = global::WayBill.Properties.Resources.BIGREPORT;
             this.گزارشاتToolStripMenuItem1.Name = "گزارشاتToolStripMenuItem1";
-            this.گزارشاتToolStripMenuItem1.Size = new System.Drawing.Size(120, 25);
+            this.گزارشاتToolStripMenuItem1.Size = new System.Drawing.Size(120, 26);
             this.گزارشاتToolStripMenuItem1.Text = "گزارشات   ";
             this.گزارشاتToolStripMenuItem1.Click += new System.EventHandler(this.گزارشاتToolStripMenuItem1_Click);
             // 
@@ -218,7 +219,7 @@
             this.دربارهماToolStripMenuItem1.BackColor = System.Drawing.Color.Goldenrod;
             this.دربارهماToolStripMenuItem1.Image = global::WayBill.Properties.Resources.search_icon;
             this.دربارهماToolStripMenuItem1.Name = "دربارهماToolStripMenuItem1";
-            this.دربارهماToolStripMenuItem1.Size = new System.Drawing.Size(101, 25);
+            this.دربارهماToolStripMenuItem1.Size = new System.Drawing.Size(101, 26);
             this.دربارهماToolStripMenuItem1.Text = "درباره ما";
             this.دربارهماToolStripMenuItem1.Click += new System.EventHandler(this.دربارهماToolStripMenuItem1_Click);
             // 
@@ -227,39 +228,39 @@
             this.خروجToolStripMenuItem.BackColor = System.Drawing.Color.Goldenrod;
             this.خروجToolStripMenuItem.Image = global::WayBill.Properties.Resources.Exit;
             this.خروجToolStripMenuItem.Name = "خروجToolStripMenuItem";
-            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(79, 25);
+            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(79, 26);
             this.خروجToolStripMenuItem.Text = "خروج";
             this.خروجToolStripMenuItem.Click += new System.EventHandler(this.خروجToolStripMenuItem_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(14, 25);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(14, 26);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(14, 25);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(14, 26);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(14, 25);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(14, 26);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(14, 25);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(14, 26);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(14, 25);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(14, 26);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(14, 25);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(14, 26);
             // 
             // FormMainWindow
             // 
@@ -277,7 +278,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormMainWindow";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "صفحه اصلی";
             this.Load += new System.EventHandler(this.FormMainWindow_Load);
